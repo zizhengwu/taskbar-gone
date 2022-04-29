@@ -186,6 +186,11 @@ namespace TaskbarGone
         public const int MOD_ALT = 0x1;
 
         /// <summary>
+        /// The mod win.
+        /// </summary>
+        public const int MOD_WIN = 0x0008;
+
+        /// <summary>
         /// The settings data.
         /// </summary>
         private SettingsData settingsData = new SettingsData();
@@ -543,7 +548,7 @@ namespace TaskbarGone
         public void RegisterHotkeys()
         {
             // Register CTRL + SHIFT + 9
-            RegisterHotKey(this.Handle, 0, MOD_CONTROL + MOD_SHIFT, Convert.ToInt16(Keys.D9));
+            RegisterHotKey(this.Handle, 0, MOD_WIN, Convert.ToInt16(Keys.S));
         }
 
         /// <summary>
